@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Ubuntu&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    height: 60px;
+    width: 100%;
+    text-align: center;
+}
+.nav-bar{
+    width: 100%;
+    background:rgba(0, 0, 0, 0.2) url(../img/navv.png);
+    background-position: center;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    box-shadow: 0 5px 15px rgba(0, 0.9, 0.9, 0.9);
+    z-index: 111;
+
+}
+.nav-bar ul{
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    text-align: center;
+
+}
+.logo{
+    width: 60px;
+    display: flex;
+    border-radius: 50%;
+}
+.nav-bar ul li{
+    list-style: none;
+    /* padding: 20px 20px; */
+}
+.nav-bar ul li a{
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Ubuntu', sans-serif; */
+}
+
+.nav-bar ul li a:hover{
+    color: red;
+}
+ li{
+    font-size: 20px;
+    color: red;
+}
+
+
+/* section two is start */
+
+/* .sectwo{
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7) url(../img/bgvdo.mp4);
+} */
+.bg-video{
+    height: 100%;
+}
+
+.bg-video .mantra-main-div{
+    margin-top: 100px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+}
+#myVideo{
+    min-width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    position:absolute;
+}
+/* .mantra-main-div{
+    margin-top: 100px;
+
+} */
+/* ..mantra-main-div .g-mantra{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+} */
+
+.mantra-main-div .g-mantra h4{
+    font-size: 35px;
+    text-align: center;
+    color: seashell;
+}
+
+.mantra-main-div .g-mantra p{
+    font-size: 20px;
+    text-align: center;
+    color: rgb(203, 218, 217);
+    font-weight: 700;
+}
+
+.mantra-button{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.mantra-button button{
+    background: transparent;
+    color: whitesmoke;
+    font-size: 18px;
+    /* border:2px solid rgb(201, 179, 179); */
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px 10px;
+    box-shadow: 0 9px #999;
+    outline: none;
+    border:none;
+}
+
+.mantra-button button:hover{
+    background-color: rgb(209, 173, 173);
+}
+.mantra-button button:active {
+    background-color: rgb(209, 168, 168);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+.sectext{
+    height: 100vh;
+}
+
+.mantra-containers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     min-height: 100vh; 
+    width: 100%;
+    position: fixed;
+    top: 0; left: 0;
+    background:rgba(0, 0, 0, 0.5);
+    transform: scale(0);
+    margin-top: 50px;
+}
+
+.mantra-containers .mantras{
+    height: 500px;
+    min-width: 800px;
+    max-width: 800px;
+    margin: 0 10px;
+    padding: 20px;
+    background:#fff;  
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    overflow: scroll;
+}
+.mantra-containers .mantras .om-icon img{
+    max-width: 60px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow:  0 3px 5px  rgba(0, 0, 0, 0.3);
+                    
+}
+
+.mantra-containers .mantras h3{
+    color: #333;
+    font-size: 25px;
+    
+}
+
+.mantra-containers .mantras h4{
+    color: rgb(68, 52, 52);
+    font-size: 20px;
+    display: flex;
+    margin-top: 50px;
+    
+}
+.mantra-containers .mantras p{
+    color: #666;
+    margin:20px 0;
+
+}
+
+.mantra-containers .mantras .np-artha-div{
+   display: right;
+
+}
+
+.mantra-containers .mantras .np-artha{
+    margin-bottom: 30px;
+    cursor: pointer;
+    border: 1px solid #999;
+    outline: none;
+    border-radius: 5px;
+    font-size: 15px;
+    background:rgb(231, 219, 219);
+    color:black;
+    
+}
+.mantra-containers .mantras button{
+    height: 35px;
+    width: 120px;
+    background:#333;
+    color:#fff;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    font-size: 17px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.mantra-containers .mantras button:hover{
+    opacity: 0.8;
+}
+.mantra-containers .mantras .fa-times{
+    position: absolute;
+    top: 15px; right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+
+}
+.mantra-containers .mantras .np-artha-div .np-artha-text{
+    display: none;
+    color: rgb(92, 76, 76);
+    font-weight: 600;
+    letter-spacing: 0.1ch;
+
+}
+
+.mantra-containers .mantras .np-artha-div .np-ar-h{
+    display: none;
+    color: black;
+    font-weight: 600;
+    letter-spacing: 0.1ch;
+    margin-bottom: 20px;
+    font-size: 20px;
+
+}
+
+
+/* section four  recent post */
+.recent-post{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: rgb(212, 211, 208);
+    
+}
+.recent-post .category-post h2{
+    color: black;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    padding-top:40px;   
+    text-align: center; 
+    text-transform: uppercase;
+    letter-spacing: 0.4ch;
+    word-spacing: 0.5ch;
+    user-select: none;
+    cursor: pointer;
+}
+
+.recent-post .category-post{
+    width: 100%;
+}
+
+.recent-post .category-post .filter-post{
+    text-align: center;
+}
+.recent-post .category-post .filter-post ul{
+    margin-bottom: 50px;
+}
+
+.recent-post .category-post .filter-post ul li{
+    list-style: none;
+    display: inline-block;
+    margin:20px 0px;
+    border:1px solid #e74c3c;
+    border-radius: 50px;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: black;
+    transition: 0.5s ease;
+}
+.recent-post .category-post .filter-post ul li:hover{
+    background:#e7756f;
+    color: white;
+}
+
+
+.recent-post .category-post .filter-post ul .active{
+    background:#e74c3c;
+   
+}
+.recent-post .category-post .post-items{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: center;
+    align-items: center;
+
+}
+.recent-post .category-post .post-items .item{
+    width: 250px;
+    height: 500px;
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    justify-content: center;
+    align-items: center;
+    transition: transform .2s;
+
+}
+
+.recent-post .category-post .post-items .item .card img{
+    width: 250px;
+    height: 250px;
+    border:2px solid #fff;
+    border-radius: 20px;
+    opacity: 0.9;
+
+}
+.recent-post .category-post .post-items .item .card img:hover{
+    opacity: 1;
+}
+.recent-post .category-post .post-items .item:hover{
+    cursor: pointer;
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2); 
+
+}
+
+.recent-post .category-post .post-items .news-item{
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 10px;
+
+}
+
+.recent-post .category-post .post-items .news-item img{
+    width: 100%;
+    height: 100%;
+    border:2px solid #f78d;
+    border-radius: 5%;
+
+}
+.recent-post .category-post .post-items .card {
+   display: inline-block;
+   margin: 0 1% 55px;
+   /* border: 1px solid  #e4e4e4; */
+   border-radius: 8px;
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.9);
+   background: rgb(219, 224, 217);
+
+}
+.recent-post .category-post .post-items .card figcaption h3 {
+   font-size: 20px;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 700;
+   color: rgb(7, 1, 1);
+
+}
+.recent-post .category-post .post-items .card figcaption h3:hover {
+   color:rgb(84, 85, 84);
+}
+.recent-post .category-post .post-items .card figcaption p {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(77, 77, 72);
+ 
+ }
+ .recent-post .category-post .post-items .card figcaption .redmore-bg{
+     padding: 8px 30px;
+     outline: none;
+     border: 1px solid #f456;
+     border-radius: 50px;
+     font-size: 18px;
+     margin-top: 10px;
+     background: rgba(41, 19, 19, 0.438);
+     cursor: pointer;
+     color: white;
+ }
+ .recent-post .category-post .post-items .card figcaption .redmore-bg:hover{
+     background:rgba(219, 135, 8, 0.883);
+ }
+.recent-post .category-post .post-items .card img{
+    width: 100%;
+    height: 300px;
+}
+
+.recent-post .category-post .post-items .card figcaption{
+    padding: 0 10px 20px;
+}
+.recent-post .category-post .post-items .card h3{
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px 0;
+
+}
+.recent-post .category-post .post-items .card p{
+    font-size: 14px;
+    color:#b1b1b1;
+    line-height: 20px;
+}
+
+
+.category-wise-categ{
+    width:100%;
+    height: 100vh;
+}
